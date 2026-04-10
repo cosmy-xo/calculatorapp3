@@ -1,0 +1,30 @@
+.calculator {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #e0e0e0;
+  padding: 1px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .calculator {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .calculator {
+    border-radius: 10px;
+  }
+}
